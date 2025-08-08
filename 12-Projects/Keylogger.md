@@ -64,7 +64,8 @@ with Listener(on_press=on_press) as listener:
 Here is then the extracted raw data that the script retrieved:
 <details>
 <summary>Raw Data</summary>
-``` txt
+
+```txt 
     Keylogger started at: Fri Dec 13 16:32:25 2024
     Fri Dec 13 16:32:27 2024 - Key.shift_r
     Fri Dec 13 16:32:28 2024 - T
@@ -807,8 +808,9 @@ Here is then the extracted raw data that the script retrieved:
     Fri Dec 13 16:36:21 2024 - e
     Fri Dec 13 16:36:21 2024 - r
     Fri Dec 13 16:36:22 2024 - Key.esc
-```
-</details>
+</details>```
+
+
 ---
 
 Once the keylogging phase is complete, the log analysis script processes the data to extract meaningful insights.
