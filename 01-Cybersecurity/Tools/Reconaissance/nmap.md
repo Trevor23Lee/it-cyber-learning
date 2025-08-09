@@ -3,12 +3,13 @@
 ![nmap photo](../../../13-Personal/Images/Nmap-1024x535.png)
 
 **Synopsis:** nmap [```<Scan Type>```] [```<Options>```] {```<Target Specification>```}
+**Download:** [nmap](https://nmap.org/download.html)
 
 ## What is nmap?
 
 Nmap, also known as Network Mapper, is a powerful open-source tool used for [port](../../Definitions.md) scanning and vulnerability analysis. It helps identify live hosts, open ports, running services, and operating systems on a network. Beyond basic scanning, Nmap’s versatile features include version detection, [firewall](../../Definitions.md) evasion techniques, and the Nmap Scripting Engine (NSE), which allows users to run custom scripts for advanced tasks like vulnerability detection, brute forcing, and network discovery. Nmap is widely used by network administrators and security professionals to audit network security and troubleshoot connectivity issues.
 
-## Common uses:
+## Common Uses:
 - Discover devices on a network
 - Scan for open TCP/UDP ports
 - Detect running services and versions (e.g., SSH, HTTP)
@@ -34,7 +35,7 @@ Nmap, also known as Network Mapper, is a powerful open-source tool used for [por
 
 ---
 
-Basic Commands:
+## Basic Commands:
 - Scan a single [IP](../../Definitions.md): ```nmap 10.0.0.2```
 - Ping scan (find local hosts on a network): ```nmap -sn 10.0.0.2/24```
 - Scan multiple IPs: ```nmap 10.0.0.97 10.0.0.2 10.0.0.255```
