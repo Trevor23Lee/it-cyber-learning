@@ -10,7 +10,7 @@ Nmap, also known as Network Mapper, is a powerful open-source tool used for port
 
 ## Common uses:
 - Discover devices on a network
-- Scan for open TCP/UDP ports
+- Scan for open [TCP](../../Definitions.md)/UDP ports
 - Detect running services and versions (e.g., SSH, HTTP)
 - Attempt OS fingerprinting
 - Identify firewall rules and configurations
