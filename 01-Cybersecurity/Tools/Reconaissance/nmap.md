@@ -2,12 +2,11 @@
 
 ![nmap photo](../../../13-Personal/Images/Nmap-1024x535.png)
 
-**Synopsis:** nmap[scan type][options]{target specification}
+**Synopsis:** nmap [<Scan Type>] [<Options>] {<Target Specification>}
 
 ## What is nmap?
 
-nmap, also known as a network mapper, which is used for port scanning and vulnability analysis. You can find live hosts, open ports, services, and operating systems on a network. 
-
+Nmap, also known as Network Mapper, is a powerful open-source tool used for port scanning and vulnerability analysis. It helps identify live hosts, open ports, running services, and operating systems on a network. Beyond basic scanning, Nmap’s versatile features include version detection, firewall evasion techniques, and the Nmap Scripting Engine (NSE), which allows users to run custom scripts for advanced tasks like vulnerability detection, brute forcing, and network discovery. Nmap is widely used by network administrators and security professionals to audit network security and troubleshoot connectivity issues.
 
 ## Common uses:
 - Discover devices on a network
@@ -150,6 +149,7 @@ Basic Commands:
 ## Scripting
 
 Nmap includes a powerful scripting engine called NSE that allows users to automate a wide variety of networking tasks. NSE scripts are written in Lua and can perform functions such as advanced service detection, vulnerability scanning, brute forcing passwords, gathering information about hosts, and even exploiting known security issues. With hundreds of available scripts, NSE enables customizable and flexible scans that go far beyond simple port discovery, making Nmap a versatile tool for both security professionals and network administrators.
+
 ---
 
 ## Resources
