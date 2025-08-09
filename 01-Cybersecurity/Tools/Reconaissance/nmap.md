@@ -2,7 +2,7 @@
 
 ![nmap photo](../../../13-Personal/Images/Nmap-1024x535.png)
 
-**Synopsis:** nmap [<Scan Type>] [<Options>] {<Target Specification>}
+**Synopsis:** nmap [```<Scan Type>```] [```<Options>```] {```<Target Specification>```}
 
 ## What is nmap?
 
