@@ -1,7 +1,10 @@
 # Keystroke Log Analyzer with Word Extraction and Pattern Detection
 
+![Keylogger Image](.././13-Personal/Images/images.jfif)
+
 In this project, I created a keylogger to capture keystrokes and a script to analyze the logged data. 
 The script reconstructs the keystrokes into readable text and identifies patterns like common words, URLs, emails, and passwords, making it easier to extract useful information.
+This keylogger was all software based, but able to be used with a USB drive, where it can run the keylogger script in the background. 
        
 ---
 
@@ -14,7 +17,7 @@ deploy a payload for the victim to execute the script, which can often evade det
 Additionally, this project deepened my proficiency in Python, particularly through the use of libraries like pynput for capturing keystrokes and re for regex-based pattern matching. 
 As I progressed, I found myself continuously expanding the functionality of the script. Initially focused on detecting common words and URLs, I later incorporated features to recognize emails and potential passwords.
 
-Looking ahead, there are several enhancements I'm considering, such as encrypting output files, conducting more detailed analysis of typing patterns, and expanding pattern recognition capabilities. 
+Looking ahead, there are several enhancements I'm considering, such as encrypting output files, conducting more detailed analysis of typing patterns, and expanding pattern recognition capabilities. Even turning it into a hardware device with a USB, making it a rubber ducky device where once it is plugged in, it can run in the background without victim noticing it.
 These additions could further improve the project's scope and relevance to real-world cybersecurity challenges.
 
 ---
@@ -27,7 +30,8 @@ The keylogger is designed to record all keyboard activity and log it to a file, 
 the log file by noting the start time and records each key pressed, including handling special keys like spaces, backspaces, and other non-character keys.
 The keylogger continues capturing input until the esc key is pressed, which serves as the stop mechanism.
 
-Below is the code for the keylogger in Python:
+<ins>Below is the code for the keylogger in Python:</ins>
+
 ```
 from pynput.keyboard import Listener
 import time
@@ -61,7 +65,8 @@ with Listener(on_press=on_press) as listener:
 
 ---
 
-Here is then the extracted raw data that the script retrieved:
+<ins>Here is then the extracted raw data that the script retrieved:</ins>
+
 <details>
     <summary>Raw Data</summary>
 
@@ -513,7 +518,7 @@ Here is then the extracted raw data that the script retrieved:
     Fri Dec 13 16:34:47 2024 - m
     Fri Dec 13 16:34:48 2024 - Key.space
     Fri Dec 13 16:34:48 2024 - o
-    Fri Dec 13 16:34:48 2024 - n
+    Fri Dec 13 16:34:48 2024 - r
     Fri Dec 13 16:34:48 2024 - Key.space
     Fri Dec 13 16:34:48 2024 - y
     Fri Dec 13 16:34:49 2024 - o
@@ -820,7 +825,8 @@ to match specific patterns. The results are then output to a new file, extracted
 used word, any identified URLs, emails, and passwords. This project highlights how keyloggers can be used to gain intelligence and emphasizes the importance of understanding
 these tools from a cybersecurity perspective to recognize potential threats and defend against them.
 
-Below is the next script in python that analyzes the raw data to extract valuable information:
+<ins>Below is the next script in python that analyzes the raw data to extract valuable information:</ins>
+
 ```
 import re
 from collections import Counter
@@ -996,12 +1002,12 @@ if __name__ == "__main__":
 
 ---
 
-Here is then the final output of the extracted information from the previous script:
+<ins>Here is then the final output of the extracted information from the previous script:</ins>
 
 ```
 Keylogger started at: Fri Dec 13 16:32:25 2024
 
-This is a keylogger test , this is all being logged from a keylogger . This keylogger will pick up every key stroke . That is scary ! Then it will be analyzed . Hopefully I don t go to a website like TryHackMe.com and type in my credentials . Which being keylogged@example . com and my password being P @ $ $ W0rd ! 99 for the website . That keylogger will log that in and might find a tutorial for a tryhackme room on youtube.com with my account ! Might have to email tryhackme@support . com or go to accounthelp.edu on what to do and how to keep myself safe from a keylogger . Or i can just hit the esc key to stop this keylogger
+This is a keylogger test , this is all being logged from a keylogger . This keylogger will pick up every key stroke . That is scary ! Then it will be analyzed . Hopefully I don t go to a website like TryHackMe.com and type in my credentials . Which being keylogged@example . com and my password being P @ $ $ W0rd ! 99 for the website . That keylogger will log that in and might find a tutorial for a tryhackme room or youtube.com with my account ! Might have to email tryhackme@support . com or go to accounthelp.edu on what to do and how to keep myself safe from a keylogger . Or i can just hit the esc key to stop this keylogger
 ---------------------------------------------------------------
 
 Most common word: 'keylogger' (appears 6 times)
@@ -1016,3 +1022,26 @@ Potential Passwords found: ['P@$$W0rd!99']
 Emails Found: ['keylogged@example.com', 'tryhackme@support.com']
 ---------------------------------------------------------------
 ```
+
+## Results:
+
+As shown above, when passed through both scripts, it was able to clean the raw data into a readable format to know what the victim was exactly typing. As well as finding multiple patterns that may be useful for the perpetrator. Which these patterns that this keylooger/analysis script found was most common words, URLS, potential passwords, and emails. Which these can be used to gain access easily. The perpetrator can go to tryhackme.com and use the email "keylogged@example.com" with the password "P@$$W0rd!99". 
+
+---
+
+## **Disclaimer:**
+
+## Educational Use Only
+This code is provided for educational and research purposes only. It is intended to help individuals learn about log analysis, data processing, and basic cybersecurity concepts. The intent behind this project is to raise awareness about common patterns in log files, potential security risks, and how to analyze such data from a security perspective.
+
+### Important Notes:
+1. Ethical Use: This project must not be used for unethical activities, illegal hacking, or any form of unauthorized access to systems or data. The code is not intended to be used for malicious purposes, including but not limited to:
+
+  - Unauthorized access to user accounts or systems.
+  - Phishing or data harvesting.
+  - Interfering with or modifying log files without proper consent.
+2. Responsibility: By using this code, you agree to take full responsibility for its use. You must ensure that your actions comply with all relevant laws and regulations. Misuse of this project could lead to severe legal and ethical consequences.
+
+3. Do Not Deploy for Unauthorized Use: This software is not designed for deployment in a real-world, production environment where it could be used to analyze sensitive or private data without permission.
+
+4. Security and Privacy: Any data processed by this code must be handled securely. Ensure that you do not expose any sensitive, personally identifiable information (PII) in any logs or data files processed by this code. Always use data that you have permission to work with.
