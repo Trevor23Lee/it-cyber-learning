@@ -7,17 +7,22 @@
 ## What is CompTIA Security+ ?
 
 CompTIA Security+ is a globally recognized certification that validates foundational skills in cybersecurity, focusing on risk management, threat analysis, and network security. 
-It is one of the major certificates that is sought out after for cybersecurity to ensure the person has the basics of what cybersecurity is. Price: $425
+It is one of the major certificates that is sought out after for cybersecurity to ensure the person has the basics of what cybersecurity is. 
+
+*Price: $425*
 
 ---
 
 ## Exam Objective Domains (Version 7)
 
-- 1.0: General Security Concepts                    (12% of Exam)
-- 2.0: Threats, Vulnabilities, and Mitigrations     (22% of Exam)
-- 3.0: Security Architecture                        (18% of Exam)
-- 4.0: Security Operations                          (28% of Exam)
-- 5.0: Security Program Management and Oversight    (20% of Exam)
+| Domain | Topic                                               | % of Exam |
+|--------|-----------------------------------------------------|-----------|
+| 1.0    | General Security Concepts                           | 12%       |
+| 2.0    | Threats, Vulnerabilities, and Mitigations           | 22%       |
+| 3.0    | Security Architecture                               | 18%       |
+| 4.0    | Security Operations                                 | 28%       |
+| 5.0    | Security Program Management and Oversight           | 20%       |
+
 
 For full objectives covered, see [CompTIA Security+ Exam Objectives (Version 7)](https://www.comptia.org/en-us/certifications/security/)
 
