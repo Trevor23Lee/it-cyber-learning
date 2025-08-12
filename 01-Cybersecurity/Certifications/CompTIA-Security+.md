@@ -2,6 +2,9 @@
 
 ![CompTIA Security+ Logo](../../13-Personal/Images/12-300x300.png)
 
+**Where to buy:** [A Security+](https://www.comptia.org/en-us/certifications/security/#buy-now)
+*Price: $425*
+
 ---
 
 ## What is CompTIA Security+ ?
@@ -9,7 +12,6 @@
 CompTIA Security+ is a globally recognized certification that validates foundational skills in cybersecurity, focusing on risk management, threat analysis, and network security. 
 It is one of the major certificates that is sought out after for cybersecurity to ensure the person has the basics of what cybersecurity is. 
 
-*Price: $425*
 
 ---
 
@@ -50,7 +52,7 @@ However, I did study for a month and passed the exam first try. I did not get 10
 
 ---
 
-## Jobs Assoicated with Gaining Certification
+## Jobs Associated with Gaining Certification
 
 - Systems/Security Administrator
 - IT Support Technician

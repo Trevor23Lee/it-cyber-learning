@@ -79,6 +79,7 @@ I recently acquried this device a few months ago on the intent of learning about
 
 ## Knowledge factor:
 **8/10**
+
 I am confident in my understanding of the main tools available on the Flipper Zero and how they are applied in various scenarios. I have explored each tool through hands-on penetration testing, including my credit card (NFC), TV and fans (Infrared), school badge (RFID), USB Rubber Ducky emulation on a laptop (USB/Bad KB), Wi-Fi attacks using the GPIO Wi-Fi add-on, and even playing some of the built-in games. However, there are still a few features I haven’t fully tested or mastered, particularly regarding simulating real-world attacks.
 
 ## Disclaimer:

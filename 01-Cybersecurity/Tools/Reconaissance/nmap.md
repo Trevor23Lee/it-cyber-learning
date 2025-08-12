@@ -3,6 +3,7 @@
 ![nmap photo](../../../13-Personal/Images/Nmap-1024x535.png)
 
 **Synopsis:** nmap [```<Scan Type>```] [```<Options>```] {```<Target Specification>```}
+
 **Download:** [nmap](https://nmap.org/download.html)
 
 ## What is nmap?
@@ -155,6 +156,7 @@ Nmap includes a powerful scripting engine called NSE that allows users to automa
 
 ## Knowledge factor:
 **6.5/10**
+
 I have gained much knowledge from this tool, but lack daily usage and not strong with the scripting feature. I am able to remember most of the more common commands that are useful and practical. I have even tested myself with Chat-GPT, prompting it to give me a lengthy command with mutliple flag `<options>` and `<target specifications>` and I had to decipher it, or vise versa where I had to create a command line with the multiple flag requirements. I was able to get about 80% of the questions correct and enjoyed that learning process. However I am unsure on the use of scripting and how to exactly go about it. Other than reading documents and testing myself against Chat-GPT, I tried out a few of these commands on my own WiFi, enabling me to see real-world examples. With this, I was able to learn more about my network and how much information you can get on the network you are looking at. This tool is great for recon, because you are able to get a backview of the network and where there might be vulnabilities. 
 
 ## Resources
