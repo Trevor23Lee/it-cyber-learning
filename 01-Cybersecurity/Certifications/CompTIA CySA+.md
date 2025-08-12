@@ -2,8 +2,9 @@
 
 ![CySA Logo](../../13-Personal/Images/cysa-certification.webp)
 
-**Where to buy:**
-*Price: $392*
+**Where to buy:** [CySA+](https://www.comptia.org/en-us/certifications/cybersecurity-analyst/#buy-now)
+
+*Price: $425*
 
 ---
 

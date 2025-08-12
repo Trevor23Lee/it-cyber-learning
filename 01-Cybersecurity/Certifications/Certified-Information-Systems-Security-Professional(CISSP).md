@@ -3,6 +3,7 @@
 ![CISSP Logo](../../13-Personal/Images/ISC2_CISSP_ISSAP_RGB__horiz_inline.png)
 
 **Where to buy:** [CISSP](https://www.isc2.org/certifications/cissp)
+
 *Price: $749*
 
 ---

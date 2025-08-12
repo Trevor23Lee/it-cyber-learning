@@ -3,6 +3,7 @@
 ![CEH Logo](../../13-Personal/Images/CEH-Logo.png)
 
 **Where to buy:** [CEH](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh-v13-north-america/)
+
 *Price: $950 - $1,200*
 
 ---

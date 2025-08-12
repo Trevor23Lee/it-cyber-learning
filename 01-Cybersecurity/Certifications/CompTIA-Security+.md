@@ -3,6 +3,7 @@
 ![CompTIA Security+ Logo](../../13-Personal/Images/12-300x300.png)
 
 **Where to buy:** [A Security+](https://www.comptia.org/en-us/certifications/security/#buy-now)
+
 *Price: $425*
 
 ---
