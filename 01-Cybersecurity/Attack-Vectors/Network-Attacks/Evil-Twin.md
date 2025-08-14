@@ -3,7 +3,7 @@
 
 ## Attack Vector Classification:
 
-Human-Focused (Social Engineering) -> Phishing -> Evil Twin
+Network and Social Engineering Attack
 
 
 ## Description:
@@ -17,7 +17,7 @@ The attacker can configure the page to request any information, such as the vict
 On the attacker’s side, the submitted information is captured by the script. With the victim’s email and password, the hacker can log into their account, lock them out, read their emails, and potentially gain access to other linked accounts.
 
 
-## Common Targets:
+## Common Target(s):
 
 - Public WiFi locations where people expect and need free internet without asking questions of source (e.g., Coffee Shops, Airports, Hotels, etc.)
 - Coroperate Environments where employees connect to office WiFi (e.g., Hospitals, banks, etc.)
