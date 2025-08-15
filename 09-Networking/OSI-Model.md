@@ -40,7 +40,7 @@ Think of the OSI Model like mailing a package: the bottom layers are the trucks,
 
 ## Each Layer:
 
-### Layer 7 (Application Layer):
+### Application Layer (Layer 7):
 
 This layer represents the point of interaction between humans and computers, where users communicate with a system through software. Technically, the user does not interact directly with the Application Layer itself. Instead, they interact with the network stack through application processes, user interfaces, or application programming interfaces (APIs) that link the application in use to the computer’s operating system.
 
@@ -54,7 +54,7 @@ Anything you see on the screen from the application—such as messages, prompts,
 The Application Layer is like the receptionist at an office—you're not talking directly to the building’s infrastructure, but the receptionist connects you to the right department, checks if they’re available, and makes sure you can communicate effectively.
 
 
-### Layer 6 (Presentation Layer):
+### Presentation Layer (Layer 6):
 
 The Presentation Layer is responsible for formatting and presenting data to the Application Layer. Its main functions include data translation, code formatting, data compression and decompression, as well as encryption and decryption. This ensures that data sent from one system’s Application Layer can be correctly interpreted by another system’s Application Layer. For example, it handles the conversion of Unicode to ASCII or other encoding formats.
 
@@ -64,7 +64,7 @@ A real-world example of this layer in action is when you visit a website using S
 Think of the Presentation Layer as a translator or document formatter—it makes sure that data coming from one system can be understood by another, just like translating a document into a language someone else can read.
 
 
-### Layer 5 (Session):
+### Session Layer (Layer 5):
 The Session Layer is responsible for establishing, managing, authenticating, and terminating sessions between Presentation Layer entities. It coordinates communication between systems and organizes their interactions by supporting three modes:
 
 1. **Simplex** – One-way communication  
@@ -76,7 +76,7 @@ The Session Layer also ensures that each application’s data remains separate f
 **In plain English:**  
 Think of the Session Layer as a meeting organizer—it sets up the “meeting” between applications, keeps track of who is speaking when, and ensures each conversation stays separate and orderly.
 
-### Layer 4 (Transport)
+### Transport Layer (Layer 4):
 
 The Transport Layer segments and reassembles data into a continuous data stream. Its main purposes are reliable data transmission, error detection, and flow control. It also provides mechanisms for multiplexing upper-layer applications, establishing virtual connections, and tearing down those connections when communication is complete.  
 
@@ -107,7 +107,7 @@ The Transport Layer can operate in two modes:
 **Windowing:** Determines the number of unacknowledged data segments (in bytes) a sender can transmit before waiting for an acknowledgment, controlling the flow of data effectively.
 
 
-### Layer 3 (Network Layer)
+### Network Layer (Layer 3):
 
 The Network Layer manages logical addressing, determines device locations on the network, and selects the best path for data to travel. Its main functions include routing, addressing, and making path decisions to move data between devices across multiple networks. This layer primarily deals with IP addresses and subnetting, as well as how routers forward traffic. **Routers are Layer 3 devices.**
 
@@ -126,7 +126,7 @@ Protocol Examples:
 - IP, IPv6, ICMP (Internet Control Message Protocol), IGMP (Internet Group Management Protocol)  
 - Routing Protocols: RIP, OSPF, EIGRP, BGP (Border Gateway Protocol)
 
-### Layer 2 (Data Link Layer)
+### Data Link Layer (Layer 2):
 
 The Data Link Layer provides the physical transmission of data and manages error notification, network topology, and flow control. It ensures that messages are delivered to the correct device on a LAN using hardware (MAC) addresses and translates messages from the Network Layer into bits for the Physical Layer to transmit. This layer is responsible for the unique identification of each device on a local network.
 
@@ -143,7 +143,7 @@ Protocol Examples:
 - ATM (Asynchronous Transfer Mode)
 
 
-### Layer 1 (Physical Layer)
+### Physical Layer (Layer 1):
 
 The Physical Layer is the lowest layer of the OSI model and is responsible for transmitting raw bits over a physical medium. Bits are represented as electrical, optical, or radio signals (0s and 1s). This layer defines the electrical, mechanical, procedural, and functional specifications for activating, maintaining, and deactivating physical connections between devices.
 
@@ -172,6 +172,6 @@ Data encapsulation is when a host transmits data across a netwrok to another dev
 
 
 ## Reference/Resources:
-- Chapter 2,6 from Network+ Sybex
-- Chapter 12 from Security+ Sybex
+- Chapter 2,6 from Network+ Sybex Study Guide
+- Chapter 12 from Security+ Sybex Study Guide
 - [Professor Messer](https://www.professormesser.com/network-plus/n10-009/n10-009-video/understanding-the-osi-model-n10-009/)
