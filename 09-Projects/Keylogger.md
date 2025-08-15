@@ -1,6 +1,6 @@
 # Keystroke Log Analyzer with Word Extraction and Pattern Detection
 
-![Keylogger Image](.././13-Personal/Images/images.jfif)
+![Keylogger Image](.././10-Personal/Images/images.jfif)
 
 In this project, I created a keylogger to capture keystrokes and a script to analyze the logged data. 
 The script reconstructs the keystrokes into readable text and identifies patterns like common words, URLs, emails, and passwords, making it easier to extract useful information.

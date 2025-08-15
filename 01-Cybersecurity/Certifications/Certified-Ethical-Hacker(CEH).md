@@ -1,6 +1,6 @@
 # Certified Ethical Hacker (CEH)
 
-![CEH Logo](../../13-Personal/Images/CEH-Logo.png)
+![CEH Logo](../../10-Personal/Images/CEH-Logo.png)
 
 **Where to buy:** [CEH](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh-v13-north-america/)
 

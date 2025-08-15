@@ -1,6 +1,6 @@
 # CompTIA CySA+
 
-![CySA Logo](../../13-Personal/Images/cysa-certification.webp)
+![CySA Logo](../../10-Personal/Images/cysa-certification.webp)
 
 **Where to buy:** [CySA+](https://www.comptia.org/en-us/certifications/cybersecurity-analyst/#buy-now)
 

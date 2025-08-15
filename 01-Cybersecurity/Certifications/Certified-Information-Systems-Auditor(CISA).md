@@ -1,6 +1,6 @@
 # Certified Information Systems Auditor (CISA)
 
-![CISA Logo](../../13-Personal/Images/CISA_wordmark.png)
+![CISA Logo](../../10-Personal/Images/CISA_wordmark.png)
 
 **Where to buy:** [CISA](https://www.isaca.org/credentialing/cisa)
 

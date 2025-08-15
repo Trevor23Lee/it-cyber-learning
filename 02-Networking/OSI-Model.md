@@ -12,7 +12,7 @@ These seven layers are: 7.) Appication, 6.)Presentation, 5.) Session, 4.) Transp
 A diagram is below to show each layer and what 
 
 ## Diagram:
-![Diagram of OSI Model](../13-Personal/Images/The-7-Layers-of-the-OSI-Model--1024x525.png)
+![Diagram of OSI Model](../10-Personal/Images/The-7-Layers-of-the-OSI-Model--1024x525.png)
 
 ---
 

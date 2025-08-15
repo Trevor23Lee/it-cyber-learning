@@ -8,7 +8,7 @@ In simpler terms, the TCP/IP model is like the blueprint for sending data online
 The four layers are: 4.) Application, 3.) Transport, 2.) Internet, and 1.) Network Access (Link) Layers.
 
 ## Diagram:
-![Diagram of TCP/IP Model](../13-Personal/Images/OSI-vs-TCP-vs-Hybrid-2.webp)
+![Diagram of TCP/IP Model](../10-Personal/Images/OSI-vs-TCP-vs-Hybrid-2.webp)
 
 ---
 
