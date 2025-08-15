@@ -22,8 +22,8 @@ The bottom four layers, layers 1-4 (Transport, Network, Data Link, and Physical)
 ## Each Layer:
 
 ### Ways to remember the order(mnemonics):
-- **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way.   Layer 1 -> Layer 7
-- **A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing.  Layer 7 -> Layer 1
+- **(P)**lease **(D)**o **N**ot **(T)**hrow **(S)**ausage **(P)**izza **(A)**way.   Layer 1 -> Layer 7
+- **(A)**ll **(P)**eople **(S)**eem **(T)**o **(N)**eed **(D)**ata **(P)**rocessing.  Layer 7 -> Layer 1
 
 
 ### Layer 7 (Application Layer):
@@ -90,15 +90,29 @@ There are two types of packets used at the Network Layer:
 **Metric**: Value equals the distance traveled to the remote network.
 
 ### Layer 2 (Data Link Layer):
+This layer provides the physical transmission of the data and handles error notifcication, network topology, and flow control. It ensures that messages are delivered to the proper device on an LAN using hardware (MAC) adresses and translates messages from the Network Layer into bits for the Physical Layer to transmit. The Data Link Layer is responsible for the unique identification of each device that reside on a local network. 
 
+The two sublayers of Data Link Layer:
+
+1. **Media Access Control (MAC)**: Defines how packets are placed on the media. Physical addressing is defined here and so are logical topologies. 
+2. **Logical Link Control (LLC)**: Responible for identifying Network Layer protocols and then encaspulating them. An LLC header tells the Data Link Layer what to do with a packet once a frame is received.
 
 ### Layer 1 (Physical Layer):
-
-
+This layer is the final layer, which does two important things: It sends bits and receives bits. Bits are represented by 0 or 1. This layer specifies the electical, machanical, procedural and functional requirements for activating, maintaing, and deactivating a physcial link between end systems.
 
 
 ## Data Encapsulation
+Data encapsulation is when a host transmits data across a netwrok to another device. To be able to communicate and exchange information, each layer uses a Protocol Data Units (PDU). The PDUs represents what state the data is in for each layer of the OSI model. As you can see below, each layer has a PDU associated with it. 
 
+| PDU | Layer |
+------|--------
+| Datagrams | Application |
+| Datagrams | Presentation |
+| Datagrams | Session |
+| Segments | Transport |
+| Packets | Network |
+| Frames | Data Link |
+| Bits | Physical |
 
 ## Questions:
 1.) 
