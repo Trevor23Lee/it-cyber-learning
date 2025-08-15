@@ -16,13 +16,13 @@ TCP takes large blocks of data from an application and breaks them into smaller 
 
 TCP establishes communication using a **three-way handshake**, which sets up a **connection-oriented session** between two devices. This handshake ensures both devices are ready to send and receive data reliably.
 
-![TCP Handshake]()
+![TCP Handshake](../../10-Personal/Images/what-is-a-tcp-3-way-handshake-process-three-way-handshaking-establishing-connection-6a724e77ba96e241.jpg)
 
 TCP is a **full-duplex, connection-oriented, reliable, and accurate** protocol. While these features make TCP robust, they also add overhead, making it **slower than connectionless protocols like UDP**. TCP also includes built-in error checking to maintain data integrity.
 
 Here is the TCP segment format:
 
-![Photo of TCP Segment]()
+![Photo of TCP Segment](../../10-Personal/Images/tcp-header.png)
 
 ### Fields in the TCP Segment
 
@@ -49,7 +49,7 @@ UDP sends data in **datagrams**, which are self-contained packets that contain a
 
 In simpler terms, UDP is like sending multiple postcards—each is delivered on its own, without confirmation, but most arrive quickly and in roughly the right order.
 
-![Photo of UDP Segment]()  
+![Photo of UDP Segment](../../10-Personal/Images/UDP-packet.jpg)  
 
 ### Fields in the UDP Segment:
 - **Source Port:** The port of the sending application.  
