@@ -30,9 +30,11 @@ A successful directory traversal attack can lead to:
 ## How It Works:
 Directory traversal attacks exploit insufficient input validation in web applications. The attacker looks for input fields, URL parameters, or form submissions that accept file or path information.
 For example, a vulnerable site might retrieve files like this:
+
 ```https://example.com/view?file=report.txt```
 
 If the application fails to sanitize the file parameter, the attacker can manipulate it using special path traversal sequences such as:
+
 ```https://example.com/view?file=../../../../etc/passwd```
 
 In this case:
