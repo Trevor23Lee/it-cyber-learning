@@ -1,105 +1,161 @@
 # Open Systems Interconnection (OSI) Model
 
 ## Description:
-The OSI Model is a reference interconnection model that is made up of 7 layers. This model is used to help computers from different manufacturer's communicate together. It is to show how vendors can create interoperable network devices and software in the form of protocols, or standards so that different vendors' networks could become compatible and work together. 
+The OSI Model is a standardized reference framework made up of seven distinct layers. It was created to ensure that computers and devices from different manufacturers can communicate effectively. The model provides guidelines for how vendors can design interoperable network devices and software by following common protocols and standards, enabling different networks to work together seamlessly.
 
-As talked about, there are seven different layers that represents the state of the computer architecture. These seven layers are: 7.) Appication, 6.)Presentation, 5.) Session, 4.) Transport, 3.) Network, 2.) Data Link and 1.) Physical Layers. A diagram is below to show each layer and what 
+In simpler terms, the OSI Model is like a universal set of rules that lets technology from different brands “speak the same language” so they can share information without confusion.
 
+As talked about, there are seven different layers that represents the state of the computer architecture. 
+
+These seven layers are: 7.) Appication, 6.)Presentation, 5.) Session, 4.) Transport, 3.) Network, 2.) Data Link and 1.) Physical Layers. 
+
+A diagram is below to show each layer and what 
 
 ## Diagram:
 ![Diagram of OSI Model](../13-Personal/Images/The-7-Layers-of-the-OSI-Model--1024x525.png)
 
-## Breaking down the layers:
-The first three layers, layers 1-3 (Physical, Data Link and Network), are considered the **Media Layers**. The Media Layers are used to transmit the bits that make up network traffic, to transmit frames or logical groups of bits, and to make networks of systems or devices work properly using addressing, routing, and traffic control schemes.
+---
 
-The next four layers, layers 4-7 (Transport, Session, Presentation, and Application), are considered the **Host Layers**. The Host Layers adress things like reliable data transmissions, session management, encryption, and translation of data from the application to the network and back works, and that APIs and other high-level tools work.   
+## Breaking Down the Layers
 
-The top three layers, layers 5-7 (Application, Presentation, and Session), help define the rules of how the applications working together within host machines communicate with each other as well as with the end users. The upper layers are responsible for applications communicating between hosts. These upper layers do not know anything about networking or network addresses.
+The **first three layers**—Layers 1 to 3 (Physical, Data Link, and Network)—are known as the **Media Layers**. These layers handle the transmission of the raw bits that make up network traffic, organize those bits into frames or logical groups, and ensure that networks of systems and devices operate correctly using addressing, routing, and traffic control methods.
 
-The bottom four layers, layers 1-4 (Transport, Network, Data Link, and Physical), help define how the acutal data is transmitted from end to end. The bottom four layers define how data is transferred through physical media, switches, and routers. They also determine how to rebuild a data stream from a transmitting host to a destination host's appplication. 
+The **next four layers**—Layers 4 to 7 (Transport, Session, Presentation, and Application)—are called the **Host Layers**. They focus on tasks like ensuring reliable data delivery, managing communication sessions, encrypting and decrypting information, and translating data between the application and the network so that APIs and other high-level tools function as intended.
 
+The **top three layers**—Layers 5 to 7 (Application, Presentation, and Session)—define the rules for how applications on different hosts communicate with each other and interact with end users. These layers focus on software-level communication and are unaware of the details of networking hardware or network addresses.
+
+The **bottom four layers**—Layers 1 to 4 (Transport, Network, Data Link, and Physical)—define how data is physically transmitted from one point to another. They deal with moving data through cables, switches, and routers, and with reassembling the data stream from the sending host so it can be used by the receiving host’s application.
+
+**In plain English:**  
+Think of the OSI Model like mailing a package: the bottom layers are the trucks, roads, and delivery routes that physically move the box, while the top layers are the labels, instructions, and handshakes that make sure the right person opens it and understands what’s inside.
+
+
+---
+
+### Ways to remember the order(mnemonics):
+- **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way.   Layer 1 -> Layer 7
+- **A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing.  Layer 7 -> Layer 1
+
+---
 
 ## Each Layer:
 
-### Ways to remember the order(mnemonics):
-- **(P)**lease **(D)**o **N**ot **(T)**hrow **(S)**ausage **(P)**izza **(A)**way.   Layer 1 -> Layer 7
-- **(A)**ll **(P)**eople **(S)**eem **(T)**o **(N)**eed **(D)**ata **(P)**rocessing.  Layer 7 -> Layer 1
-
-
 ### Layer 7 (Application Layer):
-This layer is the human to computer interaction, where the users actually communicate/interact with the computer. Technically the user doesn't interact directly with the Application Layer, the user instead interacts with the network stack through application processs, interfaces, or application programming interfaces (APIs) that connect the application in use to the OS of the computer. The Application Layer acts as an interface between the application program, so browsers like Chrome don't reside within the Application Layer, they interface with the Application Layer protocols when they need to deal with remote resources. 
 
-The Application Layer also is responsibe for identifying and establishing the availability of the intended communication partner and determining whether sufficient resources for the requested communcation exist. 
+This layer represents the point of interaction between humans and computers, where users communicate with a system through software. Technically, the user does not interact directly with the Application Layer itself. Instead, they interact with the network stack through application processes, user interfaces, or application programming interfaces (APIs) that link the application in use to the computer’s operating system.
 
-Anything that you’re seeing on the screen, the application itself or any messages from the application, are often referred to as layer 7 information.
+The Application Layer serves as an interface between the application program and the network services. For example, web browsers like Chrome are not part of the Application Layer, but they use its protocols when they need to access remote resources. 
+
+This layer is also responsible for identifying and establishing the availability of a communication partner and determining whether there are sufficient resources to support the requested communication.
+
+Anything you see on the screen from the application—such as messages, prompts, or displayed data—is often considered **Layer 7 information**.
+
+**In plain English:**  
+The Application Layer is like the receptionist at an office—you're not talking directly to the building’s infrastructure, but the receptionist connects you to the right department, checks if they’re available, and makes sure you can communicate effectively.
+
 
 ### Layer 6 (Presentation Layer):
-This layer formats and presents the data to the Application Layer and is responsible for data translation and code formatting. There are also a few other key responsibilies that this layer has like data compression, decompression, encryption, and decryption. The Presentation Layer ensures that the data transferred from one system's Application Layer can be read and understood by another Application Layer from another system. Examples of this is like the conversion of Unicode to ASCII. 
 
-An example of this process is if you are communicating to a website and you are using SSL or TLS to be able to encrpyt and decrypt that data.
+The Presentation Layer is responsible for formatting and presenting data to the Application Layer. Its main functions include data translation, code formatting, data compression and decompression, as well as encryption and decryption. This ensures that data sent from one system’s Application Layer can be correctly interpreted by another system’s Application Layer. For example, it handles the conversion of Unicode to ASCII or other encoding formats.
+
+A real-world example of this layer in action is when you visit a website using SSL or TLS. The Presentation Layer manages the encryption of your data before sending it and decrypts it upon receipt, ensuring that sensitive information remains secure during transmission.
+
+**In plain English:**  
+Think of the Presentation Layer as a translator or document formatter—it makes sure that data coming from one system can be understood by another, just like translating a document into a language someone else can read.
+
 
 ### Layer 5 (Session):
-This layer is responsible for setting up, managing, authenticating and then tearing down sessions between Presentation Layer entities. It coordinates communication between systems and serves to organize their communcation by offering three different modes:
+The Session Layer is responsible for establishing, managing, authenticating, and terminating sessions between Presentation Layer entities. It coordinates communication between systems and organizes their interactions by supporting three modes:
 
-1. One Direction (Simplex)
-2. Both Directions, but only one direction at a time (Half-Duplex)
-3. Bidiectional, both ways at same time (Full-Duplex)
+1. **Simplex** – One-way communication  
+2. **Half-Duplex** – Both directions, but only one at a time  
+3. **Full-Duplex** – Both directions simultaneously  
 
-The Session Layers basically keeps an application's data seperate from other application's data. 
+The Session Layer also ensures that each application’s data remains separate from data of other applications, preventing mix-ups and maintaining organized communication streams.
 
-### Layer 4 (Transport):
-This layer segments and reassembles data into a data stream. Its main purposes are the transmission of data and error control. The Transport Layer provides the mechanisms for multiplexing upper-layer applications, establishing virtual connections, and tearing down virtual circuits. 
+**In plain English:**  
+Think of the Session Layer as a meeting organizer—it sets up the “meeting” between applications, keeps track of who is speaking when, and ensures each conversation stays separate and orderly.
 
-The term *reliable networking* relates to the Transport Layer and means **acknowledgments**, **sequencing** and **flow control** will be used. 
+### Layer 4 (Transport)
 
-**Examples**: Transmission Control Protocol (TCP) and User Datagram Protocol (UDP)
+The Transport Layer segments and reassembles data into a continuous data stream. Its main purposes are reliable data transmission, error detection, and flow control. It also provides mechanisms for multiplexing upper-layer applications, establishing virtual connections, and tearing down those connections when communication is complete.  
 
-The Transport Layer can be connectionless or connection-oriented (reliable). 
+The term *reliable networking* in the Transport Layer context refers to the use of **acknowledgments**, **sequencing**, and **flow control** to ensure data is delivered accurately and in order.
 
-- **Connectionless**: 
+**Examples:** Transmission Control Protocol (TCP) and User Datagram Protocol (UDP)
 
-- **Connection-Oriented**: Before a transmitting host starts to send segments down the OSI layered model, the sender's TCP process contacts the destination's TCP process to establish a connection. They also agree on the amount of information that will be sent in either direction before the acknowledgment segment.
+The Transport Layer can operate in two modes:
 
-The TCP three-way handshake that is needed for connection-oriented:
-1. **SYN** The first "connection agreement" segment is a request for synchronization.   
-2. **SYN/ACK** This segment acknowledge the request and establish connection parameters, the rules, between the hosts. These segments request that the receiver's sequencing is synchronized here as well so that a bidirectional connection is formed.
-3. **ACK** The last segment is also an acknowledgment. It notifies the destination host that the connection agreement has been accepted and that the connection has been established. Data now can be transfered.
+- **Connectionless:** Data is sent without establishing a prior connection (e.g., UDP).  
+- **Connection-Oriented:** A connection is established before data is sent (e.g., TCP). The sender and receiver agree on communication parameters, including the amount of data to transmit, before transmission begins.
+
+#### TCP Three-Way Handshake (Connection-Oriented Example)
+1. **SYN:** The sender requests synchronization to initiate a connection.  
+2. **SYN/ACK:** The receiver acknowledges the request and synchronizes its sequence numbers with the sender.  
+3. **ACK:** The sender confirms the connection has been established, and data transfer can begin.
 
 ![TCP 3-way handshake](../13-Personal/Images/what-is-a-tcp-3-way-handshake-process-three-way-handshaking-establishing-connection-6a724e77ba96e241.jpg)
 
-**Flow Control**: Provides a means for the receiver to govern the amount of data send by the sender. It prevents a sending host on one side from overflowing the buffers in the receiving host. 
+**Flow Control:** Ensures the receiver can control the amount of data sent by the sender, preventing buffer overflow on the receiving side.
 
-**What makes a service considered connection-oriented:**
-1. A virtual circuit is set up (such as a three-way handshake)
-2. Uses sequencing
-3. Uses acknowledgments
-4. Uses flow control
+**Connection-Oriented Services Requirements:**
+1. Establish a virtual circuit (e.g., via a three-way handshake)  
+2. Use sequencing to maintain proper data order  
+3. Implement acknowledgments to confirm receipt  
+4. Apply flow control to prevent congestion
 
-**Windowing**: The quantity of data segments (measured in bytes) that the transmitting machine is allowed to send without receiving an acknowledgment. It is used to control the amount of outstanding, unacknowledged data segments.
+**Windowing:** Determines the number of unacknowledged data segments (in bytes) a sender can transmit before waiting for an acknowledgment, controlling the flow of data effectively.
 
-### Layer 3 (Network Layer):
-This layer manages logical device addressing, tracks the location of the devices on the network, and determines the best way to move data. It's main functions are physical path decisions, addressing and routing. It is referring to IP addresses, so anything that has an IP address or a subnet mask or referring to the way that routers forward traffic.  **Routers are layer 3 devices.**
 
-There are two types of packets used at the Network Layer:
+### Layer 3 (Network Layer)
 
-1. **Route-Update Packet**: Used to update neighboring routers about the networks connected to all routers within the same internetwork. Routing protocols: Routing Information Protocol (RIP), Enhanced Interior Gateway Routing Protocol (EIGRP), and Open Shortest Path First (OSPF)
-2. **Data Packets**: Used to transport user data through the internetwork. Routing protocols: Internet Protocol (IP) and Internet Protocol version 6  (IPv6)
+The Network Layer manages logical addressing, determines device locations on the network, and selects the best path for data to travel. Its main functions include routing, addressing, and making path decisions to move data between devices across multiple networks. This layer primarily deals with IP addresses and subnetting, as well as how routers forward traffic. **Routers are Layer 3 devices.**
 
-**Network Addresses**: Are protocol-specific network addresses.
-**Interface**: The exit interface a packet will take when destined for a specific network.
-**Metric**: Value equals the distance traveled to the remote network.
+Types of Packets at the Network Layer:
+1. **Route-Update Packets:** Share information with neighboring routers about networks connected within the same internetwork.  
+   - Routing protocols: Routing Information Protocol (RIP), Enhanced Interior Gateway Routing Protocol (EIGRP), Open Shortest Path First (OSPF)  
+2. **Data Packets:** Carry user data across the internetwork.  
+   - Protocols: Internet Protocol (IP), Internet Protocol version 6 (IPv6)  
 
-### Layer 2 (Data Link Layer):
-This layer provides the physical transmission of the data and handles error notifcication, network topology, and flow control. It ensures that messages are delivered to the proper device on an LAN using hardware (MAC) adresses and translates messages from the Network Layer into bits for the Physical Layer to transmit. The Data Link Layer is responsible for the unique identification of each device that reside on a local network. 
+Key Concepts:
+- **Network Addresses:** Protocol-specific addresses used to identify devices on a network.  
+- **Interface:** The exit point a packet takes when leaving a device toward a specific network.  
+- **Metric:** A value representing the cost or distance to reach a destination network.
 
-The two sublayers of Data Link Layer:
+Protocol Examples:
+- IP, IPv6, ICMP (Internet Control Message Protocol), IGMP (Internet Group Management Protocol)  
+- Routing Protocols: RIP, OSPF, EIGRP, BGP (Border Gateway Protocol)
 
-1. **Media Access Control (MAC)**: Defines how packets are placed on the media. Physical addressing is defined here and so are logical topologies. 
-2. **Logical Link Control (LLC)**: Responible for identifying Network Layer protocols and then encaspulating them. An LLC header tells the Data Link Layer what to do with a packet once a frame is received.
+### Layer 2 (Data Link Layer)
 
-### Layer 1 (Physical Layer):
-This layer is the final layer, which does two important things: It sends bits and receives bits. Bits are represented by 0 or 1. This layer specifies the electical, machanical, procedural and functional requirements for activating, maintaing, and deactivating a physcial link between end systems.
+The Data Link Layer provides the physical transmission of data and manages error notification, network topology, and flow control. It ensures that messages are delivered to the correct device on a LAN using hardware (MAC) addresses and translates messages from the Network Layer into bits for the Physical Layer to transmit. This layer is responsible for the unique identification of each device on a local network.
 
+Sublayers of the Data Link Layer:
+
+1. **Media Access Control (MAC):** Defines how packets are placed onto the physical media. Responsible for physical addressing and controlling access to the network medium.  
+2. **Logical Link Control (LLC):** Identifies Network Layer protocols and encapsulates them into frames. The LLC header informs the Data Link Layer how to process the received frame.
+
+Protocol Examples:
+- Ethernet (IEEE 802.3)  
+- Wi-Fi (IEEE 802.11)  
+- PPP (Point-to-Point Protocol)  
+- Frame Relay  
+- ATM (Asynchronous Transfer Mode)
+
+
+### Layer 1 (Physical Layer)
+
+The Physical Layer is the lowest layer of the OSI model and is responsible for transmitting raw bits over a physical medium. Bits are represented as electrical, optical, or radio signals (0s and 1s). This layer defines the electrical, mechanical, procedural, and functional specifications for activating, maintaining, and deactivating physical connections between devices.
+
+Protocol/Technology Examples:
+- Ethernet cabling (Cat5, Cat6)  
+- Fiber optics  
+- USB  
+- Bluetooth  
+- DSL/ISDN
+
+
+---
 
 ## Data Encapsulation
 Data encapsulation is when a host transmits data across a netwrok to another device. To be able to communicate and exchange information, each layer uses a Protocol Data Units (PDU). The PDUs represents what state the data is in for each layer of the OSI model. As you can see below, each layer has a PDU associated with it. 
@@ -114,8 +170,6 @@ Data encapsulation is when a host transmits data across a netwrok to another dev
 | Frames | Data Link |
 | Bits | Physical |
 
-## Questions:
-1.) 
 
 ## Reference/Resources:
 - Chapter 2,6 from Network+ Sybex
